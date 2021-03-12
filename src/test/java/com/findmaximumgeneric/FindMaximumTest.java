@@ -32,8 +32,32 @@ public class FindMaximumTest {
         FindMaximum findMax = null;
         Comparable maxNumber = findMax.findMaxInteger(10,30,20);
         Assert.assertEquals(30, maxNumber);
+    }
+//test2.1
 
 
+    @Test
+    public void givenMaxFloatAtFirstPosition_shouldReturnFirstPosition() {
+        FindMaximum findmax = null;
+        double maxFloat = findmax.findMaxFloat(30.5,20.5,10.5);
+        Assert.assertEquals(30.5,maxFloat, 0.0);
+
+    }
+
+    @Test
+    public void givenMaxFloatAtSecondPosition_shouldReturnFirstPosition() {
+
+        FindMaximum findMax = null;
+        double maxFloat = findMax.findMaxFloat(10.5,30.5,20.5);
+        Assert.assertEquals(30.5, maxFloat, 0.0);
+
+    }
+
+    @Test
+    public void givenMaxFloatAtThirdPosition_shouldReturnFirstPosition() {
+        FindMaximum findMax = null;
+        double maxFloat = findMax.findMaxFloat(10.5, 20.5, 30.5);
+        Assert.assertEquals(30.5, maxFloat, 0.0);
 
     }
 }
