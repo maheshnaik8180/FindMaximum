@@ -17,6 +17,15 @@ public class FindMaximumTest {
         
     }
 
+    @Test
+    public void givenMaxIntegerAtSecondPosition_shouldReturnFirstPosition() {
+        FindMaximum findMax = null;
+        Comparable maxNumber = findMax.findMaxInteger(10,30,20);
+    Assert.assertEquals(30, maxNumber);
+    }
+
+
+
 
 
 }
