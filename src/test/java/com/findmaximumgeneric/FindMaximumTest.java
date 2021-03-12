@@ -4,12 +4,11 @@ import com.findmaximumgenric.FindMaximum;
 import org.junit.Assert;
 import org.junit.Test;
 
-import javax.swing.*;
+
 
 public class FindMaximumTest {
 
-    FindMaximum findmaximum = new FindMaximum();
-    private FindMaximum FindMax;
+
 //tc 1.1
 
     @Test
@@ -58,6 +57,35 @@ public class FindMaximumTest {
         FindMaximum findMax = null;
         double maxFloat = findMax.findMaxFloat(10.5, 20.5, 30.5);
         Assert.assertEquals(30.5, maxFloat, 0.0);
+
+    }
+
+
+//3.1
+
+
+    @Test
+    public void givenMaxStringAtFirstPosition_shouldReturnFirstPosition() {
+        FindMaximum findMax = null;
+        String maxString = findMax.findMaxString("peach", "apple", "banana");
+        Assert.assertEquals("peach", maxString); 
+
+    }
+
+    @Test
+    public void givenMaxStringAtSecondPosition_shouldReturnFirstPosition() {
+        FindMaximum findMax = null;
+        String maxString = findMax.findMaxString("apple", "peach", "banana");
+        Assert.assertEquals("peach", maxString);
+
+
+    }
+
+    @Test
+    public void givenMaxStringAtThirdPosition_shouldReturnFirstPosition() {
+        FindMaximum findMax = null;
+        String maxString = findMax.findMaxString("apple", "banana", "peach");
+        Assert.assertEquals("peach", maxString);
 
     }
 }
